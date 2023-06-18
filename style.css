@@ -1,0 +1,395 @@
+/*PRODUCTOS*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+header {
+    position: relative;
+    background-image: url(imagenes/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px 0;
+    border-bottom: 3px solid darkred;
+}
+
+header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+
+.caja {
+    
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.caja img {
+    color: white;
+}
+
+nav {
+    position: absolute;
+    top:110px ;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    padding: 10px;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+nav li:hover {
+    box-shadow: 0px 0px 5px 5px #0bcf84;
+}
+
+nav li:active {
+    box-shadow: 0px 0px 10px 10px #04613d;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #0bcf84;
+    
+}
+
+
+.main-productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+    
+    
+}
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 30px;
+}
+
+.productos-descripcion {
+    font-size: 18px;
+}
+
+.productos-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background:url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*Contacto*/
+
+.main-contacto {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+    
+    
+}
+
+fieldset input, fieldset label, fieldset select,.checkbox input{
+    cursor: pointer;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+    
+}
+
+table {
+
+    margin: 40px 8%;
+    width: 22%;
+    
+}
+
+thead {
+    border: 3px red solid;
+    background-color: black;
+    color: white;
+    font-size: 21px;
+}
+
+td, th {
+    padding: 5px 15px;
+    border: 2px red solid;
+    text-align: center;
+}
+
+/* PAGINA HOME */
+
+.banner {
+    border: 3px solid;
+    border-image: linear-gradient(to right, #FFC107, #FF5733);
+    border-image-slice: 1;
+    display: block;
+    margin: 20px auto;
+    width: 800px;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px 10px red ;
+}
+
+.principal p {
+    margin: 0 0 1em;
+
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FeFeFe,#888888);
+    
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:before {
+    content: "✪";
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales {
+    width: 60%;
+    margin: 0 0 30px 0;
+    transition: 400ms;
+    box-shadow: 10px 10px 20px 15px #000000;
+}
+
+.imagen-diferenciales:hover {
+    box-shadow: 10px 10px 25px 20px darkred;
+    
+    
+}
+
+.video {
+    width: 560px;
+    padding: 3px 3px 0;
+    margin: 1em auto;
+    box-shadow: 5px 5px 10px 12px ;
+    border: 5px solid;
+    border-image: linear-gradient(to right, red, darkred);
+    border-image-slice: 1;
+}
+
+footer {
+    border-top: 3px solid darkred;
+}
+
+@media screen and (max-width:480px) {
+    /* HOME */
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales {
+        width: 100%;
+    }
+
+    .banner {
+        width: 90%;
+    }
+
+    .imagen-diferenciales {
+        margin: 30px 0;
+    }
+
+    /* PRODUCTOS */
+
+    .main-productos {
+        width: 70%;
+        margin: 0 auto; /* Para centrar los productos */
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Para centrar los productos horizontalmente */
+        gap: 10px; /* Para reducir el espacio entre los productos */
+    }
+
+    .productos li {
+        width: calc(50% - 5px); /* Para que cada producto ocupe el 50% del ancho de su contenedor (con 5px de espacio entre ellos) */
+        width: 80%;
+    }
+
+    .productos img {
+        width: 100%;
+    }
+
+    /* CONTACTO */
+
+    .main-contacto {
+        width: 90%;
+        padding: 5px;
+        margin: 0 5%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
